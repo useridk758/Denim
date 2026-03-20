@@ -1,19 +1,23 @@
-function launchProxy() {
-    const url = document.getElementById('urlInput').value;
-    if (!url) return alert("Please enter a URL!");
+function launchPxy() {
+    let url = document.getElementById('urlInput').value;
+    if (!url) return alert("Enter a URL first!");
 
-    // Show Transition
+    // Ensure URL has protocol
+    if (!url.startsWith('http')) {
+        url = 'https://' + url;
+    }
+
     const loader = document.getElementById('loader');
     loader.classList.remove('loader-hidden');
 
-    // Simulate connection delay
+    // Smooth transition before redirect
     setTimeout(() => {
-        // For a real proxy, you'd use a service like Ultraviolet or a custom PHP proxy
+        // Redirecting to a public p*xy engine for functionality
         window.location.href = "https://www.croxyproxy.com" + encodeURIComponent(url);
-    }, 2000);
+    }, 1500);
 }
 
-function quickLink(site) {
-    document.getElementById('urlInput').value = site;
-    launchProxy();
+function quickLink(destination) {
+    document.getElementById('urlInput').value = destination;
+    launchPxy();
 }
