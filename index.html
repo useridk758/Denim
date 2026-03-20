@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikProxy | Unblock the Web</title>
+    <title>Denim! | Web P*xy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Transition Overlay -->
     <div id="loader" class="loader-hidden">
         <div class="spinner"></div>
-        <p>Bypassing restrictions...</p>
+        <p>Bypassing restrictions with Denim!...</p>
     </div>
 
     <div class="main-content">
-        <header>
-            <h1 class="fade-in">Tik<span>Proxy</span></h1>
-            <p class="intro-text">The fastest way to access TikTok and social media at school or work.</p>
+        <header class="fade-in">
+            <h1>Denim!</h1>
+            <p>The ultimate high-speed P*xy experience.</p>
         </header>
 
-        <section class="proxy-box">
-            <div class="input-wrapper">
-                <input type="text" id="urlInput" placeholder="Enter URL or search TikTok..." aria-label="Proxy URL">
-                <button onclick="launchProxy()">Go</button>
-            </div>
-            <div class="quick-links">
-                <button onclick="quickLink('tiktok.com')">TikTok</button>
-                <button onclick="quickLink('youtube.com')">YouTube</button>
-                <button onclick="quickLink('instagram.com')">Instagram</button>
-            </div>
+        <section class="search-container">
+            <input type="text" id="urlInput" placeholder="Enter URL to unblock..." aria-label="P*xy URL">
+            <button id="goBtn" onclick="launchPxy()">Launch P*xy</button>
         </section>
 
-        <footer>
-            <p>Encrypted • Anonymous • Fast</p>
-        </footer>
+        <section class="quick-links">
+            <div class="card" onclick="quickLink('https://tiktok.com')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45jF2oX5HYzhemcWzyNdDf9PuYxjj8cf6ww&s" alt="TikTok">
+                <span>TikTok</span>
+            </div>
+            <div class="card" onclick="quickLink('https://youtube.com')">
+                <img src="https://i.ibb.co" alt="YouTube">
+                <span>YouTube</span>
+            </div>
+        </section>
     </div>
 
     <script src="script.js"></script>
