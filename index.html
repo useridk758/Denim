@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikProxy | Unblock the Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Transition Overlay -->
+    <div id="loader" class="loader-hidden">
+        <div class="spinner"></div>
+        <p>Bypassing restrictions...</p>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1 class="fade-in">Tik<span>Proxy</span></h1>
+            <p class="intro-text">The fastest way to access TikTok and social media at school or work.</p>
+        </header>
+
+        <section class="proxy-box">
+            <div class="input-wrapper">
+                <input type="text" id="urlInput" placeholder="Enter URL or search TikTok..." aria-label="Proxy URL">
+                <button onclick="launchProxy()">Go</button>
+            </div>
+            <div class="quick-links">
+                <button onclick="quickLink('tiktok.com')">TikTok</button>
+                <button onclick="quickLink('youtube.com')">YouTube</button>
+                <button onclick="quickLink('instagram.com')">Instagram</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Encrypted • Anonymous • Fast</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
